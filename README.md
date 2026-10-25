@@ -1,6 +1,6 @@
 # HSEG Fonts
 
-HSEG（**H**oMiSe **Seg**ment）是一套**为安卓 APP「时分秒(HoMiSe)」显示专门设计**的段码字体，
+HSEG（**H**oMiSe **Seg**ment）是一套为安卓 APP「时分秒(HoMiSe)」显示**优化调整**、更符合本地习惯的段码字体，
 派生自 [keshikan](https://www.keshikan.net) 的 **DSEG**（v0.46），保留其 OFL 1.1 版权与许可。
 
 本项目提供两个系列，每个系列 24 个字重（4 族 × 6 字重）：
