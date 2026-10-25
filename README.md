@@ -1,7 +1,7 @@
 # HSEG Fonts
 
-HSEG（**H**oMiSe **Seg**ment）是一套用于时钟/计时器显示的段码字体，派生自
-[keshikan](https://www.keshikan.net) 的 **DSEG**（v0.46），保留其 OFL 1.1 版权与许可。
+HSEG（**H**oMiSe **Seg**ment）是一套**为安卓 APP「时分秒(HoMiSe)」显示专门设计**的段码字体，
+派生自 [keshikan](https://www.keshikan.net) 的 **DSEG**（v0.46），保留其 OFL 1.1 版权与许可。
 
 本项目提供两个系列，每个系列 24 个字重（4 族 × 6 字重）：
 
@@ -16,7 +16,7 @@ HSEG（**H**oMiSe **Seg**ment）是一套用于时钟/计时器显示的段码�
 
 - **HSEG16**：16 段几何（`HSSeg16-avg.svg` 派生），ASCII 32–126 全覆盖，
   含 DSEG14 原本缺失的 `# ; [ ] { }`；`~` 为十六段全亮；`!` `?` 含小数点（dp）点。
-- **HSEG7**：7 段数字字体（由 HSSeg7 改名），保留 DSEG7 的字符覆盖。
+- **HSEG7**：7 段数字字体，保留 DSEG7 的字符覆盖。
 - **PUA 等宽小写**：HSEG16 在 `U+E000–U+E019` 提供一套等宽小写（`a`–`z` 的 Mono 变体），
   与原 `a`–`z`（U+0061–U+007A，advance 816）同宽，仅亮段不同，供应用按需切换。
 - 元信息完整：`achVendID = HSEG`、`panose` 按字重、斜体 `italicAngle = -5`。
@@ -42,7 +42,6 @@ HSEG（**H**oMiSe **Seg**ment）是一套用于时钟/计时器显示的段码�
 `tools/` 下是构建脚本（路径为项目内绝对路径，公开仓库中需按需调整）：
 
 - `build_hseg16_from_svg.py`：从 DSEG14 的 SFD + `HSSeg16-avg.svg` 生成 HSEG16 的 24 个 TTF；
-- `convert_hsseg7_to_hseg7.py`：把 HSSeg7 的 TTF 改名为 HSEG7 并同步元信息；
 - `build_ttc.py`：把 TTF 目录打包成 TTC；
 - `export_hseg16.py`：导出带版本/哈希的正式 TTC；
 - `sfd_curves.py`：SFD 曲线解析（保留三次贝塞尔）。
@@ -60,8 +59,9 @@ HSEG 的家族名不含 `DSEG`，属于 OFL 允许的改名发布方式。再分
 
 ## English
 
-HSEG is a family of segmented display fonts derived from
-[DSEG](https://www.keshikan.net) v0.46 by keshikan, released under the SIL Open Font License 1.1.
-It ships two series — **HSEG16** (16-segment) and **HSEG7** (7-segment) — each with 24 weights
-(4 families × 6 weights) packed as TTC files. HSEG16 includes a monospaced lowercase set in the
-Private Use Area (`U+E000–U+E019`) alongside the normal `a`–`z`.
+HSEG is a family of segmented display fonts designed specifically for the Android app
+**"时分秒 (HoMiSe)"**, derived from [DSEG](https://www.keshikan.net) v0.46 by keshikan and
+released under the SIL Open Font License 1.1. It ships two series — **HSEG16** (16-segment)
+and **HSEG7** (7-segment) — each with 24 weights (4 families × 6 weights) packed as TTC files.
+HSEG16 includes a monospaced lowercase set in the Private Use Area (`U+E000–U+E019`)
+alongside the normal `a`–`z`.
