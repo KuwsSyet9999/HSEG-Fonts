@@ -7,18 +7,19 @@ HSEG（**H**oMiSe **Seg**ment）是一套为安卓 APP「时分秒(HoMiSe)」显
 
 | 系列 | 段数 | 家族名 | 文件 |
 | --- | --- | --- | --- |
-| HSEG16 | 16 段 | `HSEG 16 Classic / Classic Mini / Modern / Modern Mini` | `release/HSEG16_1.0.0_*.ttc` |
-| HSEG7 | 7 段 | `HSEG 7 Classic / Classic Mini / Modern / Modern Mini` | `release/HSEG7_1.0.0_*.ttc` |
+| HSEG16 | 16 段 | `HSEG 16 Classic / Classic Mini / Modern / Modern Mini` | `release/HSEG16_1.1.0_*.ttc` |
+| HSEG7 | 7 段 | `HSEG 7 Classic / Classic Mini / Modern / Modern Mini` | `release/HSEG7_1.1.0_*.ttc` |
 
 每个 TTC 内含 24 个字体（Light、Light Italic、Regular、Italic、Bold、Bold Italic）。
 
 ## 特性
 
 - **HSEG16**：16 段几何（`HSSeg16-avg.svg` 派生），ASCII 32–126 全覆盖，
-  含 DSEG14 原本缺失的 `# ; [ ] { }`；`~` 为十六段全亮；`!` `?` 含小数点（dp）点。
-- **HSEG7**：7 段数字字体，保留 DSEG7 的字符覆盖。
-- **PUA 等宽小写**：HSEG16 在 `U+E000–U+E019` 提供一套等宽小写（`a`–`z` 的 Mono 变体），
-  与原 `a`–`z`（U+0061–U+007A，advance 816）同宽，仅亮段不同，供应用按需切换。
+  含 DSEG14 原本缺失的 `# ; [ ] { }`；`~` 为十六段全亮；`!` `?` 含 dp 点。
+- **HSEG7**：7 段字体；`!` `?` 自带 period 点（位置与 HSEG16 的 dp 一致）；
+  小写 `a`–`z` 与大写 `A`–`Z` 同形；`.` `:` 与 HSEG16 同规格。
+- **PUA 全宽小写**：HSEG16 在 `U+E000–U+E019` 提供一套全宽小写，
+  与原 `a`–`z` 同宽（advance 816），其中 `b d h j n u` 已按新段码重做。
 - 元信息完整：`achVendID = HSEG`、`panose` 按字重、斜体 `italicAngle = -5`。
 
 ## 字符表
@@ -63,5 +64,6 @@ HSEG is a family of segmented display fonts designed specifically for the Androi
 **"时分秒 (HoMiSe)"**, derived from [DSEG](https://www.keshikan.net) v0.46 by keshikan and
 released under the SIL Open Font License 1.1. It ships two series — **HSEG16** (16-segment)
 and **HSEG7** (7-segment) — each with 24 weights (4 families × 6 weights) packed as TTC files.
-HSEG16 includes a monospaced lowercase set in the Private Use Area (`U+E000–U+E019`)
-alongside the normal `a`–`z`.
+HSEG16 includes a full-width lowercase set in the Private Use Area (`U+E000–U+E019`)
+alongside the normal `a`–`z`; HSEG7 renders `?` and `!` with a period dot and keeps
+lowercase identical to uppercase.
