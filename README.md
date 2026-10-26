@@ -1,6 +1,6 @@
 # HSEG Fonts
 
-HSEG（**H**oMiSe **Seg**ment）是一套为安卓 APP「时分秒(HoMiSe)」显示适配调整、更符合本地习惯的段码字体，
+HSEG（**H**oMiSe **Seg**ment）是一套为安卓 APP [「时分秒」(HoMiSe-Clock)](https://github.com/KuwsSyet9999/HoMiSe-Clock) 显示适配调整、更符合本地习惯的段码字体，
 派生自 [keshikan](https://www.keshikan.net) 的 **DSEG**（v0.46），保留其 OFL 1.1 版权与许可。
 
 本项目提供两个系列，每个系列 24 个字重（4 族 × 6 字重）：
@@ -61,7 +61,7 @@ HSEG 的家族名不含 `DSEG`，属于 OFL 允许的改名发布方式。再分
 ## English
 
 HSEG is a family of segmented display fonts designed specifically for the Android app
-**"时分秒 (HoMiSe)"**, derived from [DSEG](https://www.keshikan.net) v0.46 by keshikan and
+**[HoMiSe-Clock](https://github.com/KuwsSyet9999/HoMiSe-Clock)** (时分秒), derived from [DSEG](https://www.keshikan.net) v0.46 by keshikan and
 released under the SIL Open Font License 1.1. It ships two series — **HSEG16** (16-segment)
 and **HSEG7** (7-segment) — each with 24 weights (4 families × 6 weights) packed as TTC files.
 HSEG16 includes a full-width lowercase set in the Private Use Area (`U+E000–U+E019`)
